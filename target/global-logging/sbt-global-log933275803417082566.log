@@ -1,0 +1,24 @@
+[debug] > Exec(all {file:/C:/Users/User/Documents/Personales/Universidad/PFSD/EjemploSparkStreaming/}ejemplosparkstreaming/products {file:/C:/Users/User/Documents/Personales/Universidad/PFSD/EjemploSparkStreaming/}ejemplosparkstreaming/test:products, None, None)
+[debug] Evaluating tasks: Compile / products, Test / products
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[info] compiling 4 Scala sources to C:\Users\User\Documents\Personales\Universidad\PFSD\EjemploSparkStreaming\target\scala-2.13\classes ...
+[error] C:\Users\User\Documents\Personales\Universidad\PFSD\EjemploSparkStreaming\src\main\scala\TransactionDStreamKafka.scala:53:38: not found: value Transaction
+[error]     val lines = stream.map(record => Transaction.fromTransactionMessage(TransactionMessage.parseFrom(record.value())).category)
+[error]                                      ^
+[error] C:\Users\User\Documents\Personales\Universidad\PFSD\EjemploSparkStreaming\src\main\scala\TransactionDStreamKafka.scala:53:73: not found: value TransactionMessage
+[error]     val lines = stream.map(record => Transaction.fromTransactionMessage(TransactionMessage.parseFrom(record.value())).category)
+[error]                                                                         ^
+[error] C:\Users\User\Documents\Personales\Universidad\PFSD\EjemploSparkStreaming\src\main\scala\TransactionDStreamKafka.scala:54:31: diverging implicit expansion for type scala.math.Ordering[T1]
+[error] starting with method Tuple9 in object Ordering
+[error]     val wordCounts = lines.map(x=>(x, 1L)).reduceByKey(_+_)
+[error]                               ^
+[error] C:\Users\User\Documents\Personales\Universidad\PFSD\EjemploSparkStreaming\src\main\scala\TransactionDStreamKafka.scala:54:44: value reduceByKey is not a member of org.apache.spark.streaming.dstream.DStream[(Nothing, Long)]
+[error]     val wordCounts = lines.map(x=>(x, 1L)).reduceByKey(_+_)
+[error]                                            ^
+[error] four errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 8 s, completed 6/11/2021 08:48:23 AM
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)

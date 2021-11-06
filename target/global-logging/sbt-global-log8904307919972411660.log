@@ -1,0 +1,4 @@
+[debug] > Exec(all {file:/C:/Users/User/Documents/Personales/Universidad/PFSD/EjemploSparkStreaming/}ejemplosparkstreaming/products {file:/C:/Users/User/Documents/Personales/Universidad/PFSD/EjemploSparkStreaming/}ejemplosparkstreaming/test:products, None, None)
+[debug] Evaluating tasks: Compile / products, Test / products
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources to C:\Users\User\Documents\Personales\Universidad\PFSD\EjemploSparkStreaming\target\scala-2.13\classes ...
